@@ -13,6 +13,11 @@
     MyTodos
     <span class="info">({{ remaining.length }}/{{ todos.length }})</span>
   </h1>
+  <p>Total Likes: {{ total }}</p>
+  <like-component message="Like" @increment="incrementTotal"></like-component>
+  <like-component message="Awesome" @increment="incrementTotal"></like-component>
+  <like-component message="Great" @increment="incrementTotal"></like-component>
+  <!-- <like-component></like-component>デフォルト値のLikeのボタンが表示される -->
   <!-- <p>Hello {{ name.toUpperCase() }}!</p>
   <p><input type="text" v-model="name"></p> -->
   
